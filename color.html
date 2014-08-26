@@ -1,0 +1,13 @@
+<h1>{{title}}</h1>
+<div>
+	<button ng-click="showColors()">Get Some Color!</button>
+	<button ng-click="showStates()">Get Some States!</button>
+	<button ng-click="hideInfo()">Erase...</button>
+	<div>&nbsp;</div>
+	<div ng-show="getValues()">
+	<div ng-repeat="color in getValues()">
+		<div>{{$index + 1}}. {{color}}</div>
+	</div>
+
+</div>
+<a href="#/">Go Back...</a>

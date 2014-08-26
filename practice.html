@@ -1,0 +1,29 @@
+<html ng-app="myApp">
+<head>
+	<title>{{title}}</title>
+</head>
+<body>
+	
+	<div ng-controller='homeCtrl'>
+		<ng-view></ng-view>
+	</div>
+
+	<div ng-init="title='This is awesome...'; items=[0,1,2,3,34,5]" ng-cloak >
+
+		<input type="text" ng-model='q'>
+		<div ng-repeat="item in items | filter:q" ng-show="!hide" >
+			{{item}}
+			<br>
+			
+		</div>
+		<button ng-click="hide=!hide">Hide This</button>
+		<button ng-click="items.push(items.length)">Add Numbers</button>
+	</div>
+	<div ng-controller="appCtrl">Version: {{ version }}</div>
+
+<script type="text/javascript" src="js/angular.js"></script>
+<script type="text/javascript" src="js/angular-route.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+
+</body>
+</html>

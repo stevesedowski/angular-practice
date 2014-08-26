@@ -1,0 +1,10 @@
+<script type="text/ng-template" id="cool-template.html">
+	<div class="cool">info</div>
+</script>
+{{ title | uppercase }} &nbsp;&nbsp;&nbsp;&nbsp;<a href="#/">Go Back...</a>
+<div>
+	<button ng-click="template='home.html'">Lets look at the HOME Page</button>
+	<button ng-click="template='slides.html'">Lets look at the Slides Page</button>
+	<button ng-click="template='cool-template.html'">Lets look at a Cool Template!</button>
+</div>
+<div ng-include="template"></div>
