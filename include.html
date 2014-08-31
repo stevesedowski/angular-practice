@@ -1,10 +1,11 @@
-<script type="text/ng-template" id="cool-template.html">
+<script type="text/ng-template" id="cool-template">
 	<div class="cool">info</div>
 </script>
-{{ title | uppercase }} &nbsp;&nbsp;&nbsp;&nbsp;<a href="#/">Go Back...</a>
+<h1>{{ title | uppercase }}</h1> 
 <div>
-	<button ng-click="template='home.html'">Lets look at the HOME Page</button>
-	<button ng-click="template='slides.html'">Lets look at the Slides Page</button>
-	<button ng-click="template='cool-template.html'">Lets look at a Cool Template!</button>
+	<button ng-click="t='img/bg1.jpg'">Lets look at a Mess</button>
+	<button ng-click="t='slides.html'">Lets look at the Slides Page</button>
+	<button ng-click="t='cool-template'">Lets look at a Cool Template!</button>
 </div>
-<div ng-include="template"></div>
+<div class="spacer"></div>
+<div ng-include="t"></div>

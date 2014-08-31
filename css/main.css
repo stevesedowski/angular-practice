@@ -32,3 +32,13 @@ body {
 	height: 500px;
 	padding: 30px;
 }
+.spacer {
+	height:25px;
+}
+.active {
+	background:red;
+	color:#fff;
+}
+.not-active {
+	background-color: pink;
+}

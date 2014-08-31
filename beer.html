@@ -1,0 +1,23 @@
+
+
+
+<div ng-controller="beerCtrl">
+	<ul ng-repeat="beer in beers">
+		<li>
+			{{beer.name}} 
+			@ {{beer.price | currency }} 
+			per 6-pack 
+			(added on {{beer.purchased | date: mediumDate}}
+			)
+			<button class="danger-button" ng-click="removeBeer(beer)">Remove Beer</button>
+		</li>
+	</ul>
+	<h3 class="beer-pluralizer">
+		<ng-pluralize count="beers.length" when="pluralizer"></ng-pluralize>
+	</h3>
+	<label>Beer</label>
+	<input type="text" placeholder="What's the beer?" ng-model="beerName" name="name">
+	<label>Price</label>
+	<input type="text" placeholder="What's the price?" ng-model="beerPrice"> 
+	<button ng-click="addBeer()">Add Beer Button</button>
+</div>

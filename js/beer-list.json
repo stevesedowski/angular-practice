@@ -1,0 +1,37 @@
+{	
+	"beers": [
+				{
+					"name": "Oak Dark Ale",
+					"price": "4.59",
+					"cost": "2.59",
+					"style": "Dark Amber Ale",
+					"purchased": "Aug 22, 2014",
+					"ounces": "12",
+					"origin": "Indiana",
+					"brewery": "Milton's Brews",
+					"total-number": "6"
+				},
+				{
+					"name": "Breaker Sky Pale Ale",
+					"price": "6.59",
+					"cost": "4.59",
+					"style": "Light Ale",
+					"purchased": "Aug 22, 2014",
+					"ounces": "12",
+					"origin": "Indiana",
+					"brewery": "Milton's Brews",
+					"total-number": "6"
+				},
+				{
+					"name": "Penman Stout Ale",
+					"price": "6.59",
+					"cost": "4.59",
+					"style": "Heavy Ale",
+					"purchased": "Aug 22, 2014",
+					"ounces": "12",
+					"origin": "Indiana",
+					"brewery": "Milton's Brews",
+					"total-number": "6"
+				}
+			]
+}

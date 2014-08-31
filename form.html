@@ -1,0 +1,8 @@
+<h1>{{title}}</h1>
+<form name="myForm" ng-submit="submitForm()">
+
+<label>Your Name: </label> <input  type='text' ng-focus="focus=true;blur=false" ng-blur="blur=true;focus=false" ng-model='name' length=20 required placeholder="Your name..."/>
+<label>Your Age:  </label> <select ng-model="age" requied ng-options="age for age in getAges()"></select>
+<button ng-class="{'active' : focus, 'not-active' : !focus}">Take It Away...</button>
+</form>
+
